@@ -38,3 +38,11 @@ Então devo ver uma mensagem informando que todos os campos são obrigatórios
 Dado que acesso a página de cadastro
 Quando submeto o cadastro com uma senha com menos de 6 digitos
 Então vejo a mensagem de alerta "Informe uma senha com pelo menos 6 caracteres"
+
+#### Desafio 1 do Módulo Pro
+
+Automatizar 3 novos cenários de testes:
+
+- Email obrigatório
+- Senha obrigatória
+- Campos obrigatórios

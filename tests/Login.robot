@@ -23,7 +23,7 @@ Incorrect Password
   Go To Login Page
   Fill Credentials    ${user}
   Submit Credentials
-  Modal Content Should Be  Usuário e/ou senha inválidos.
+  Modal Content Should Be   Usuário e/ou senha inválidos.
 
 User Not Found
   [Tags]    user_not_found
@@ -33,7 +33,7 @@ User Not Found
   Go To Login Page
   Fill Credentials    ${user}
   Submit Credentials
-  Modal Content Should Be  Usuário e/ou senha inválidos.
+  Modal Content Should Be   Usuário e/ou senha inválidos.
 
 Incorrect Email
   [Tags]    incorrect_email
@@ -44,3 +44,28 @@ Incorrect Email
   Fill Credentials    ${user}
   Submit Credentials
   Should Be Type Email
+
+Required Email
+  ${user}   Create Dictionary   email=${EMPTY}    password=pwd123
+
+  Go To Login Page
+  Fill Credentials    ${user}
+  Submit Credentials
+  Alert Span Should Be    E-mail obrigatório
+
+Required Password
+  ${user}   Create Dictionary   email=tester@getgeeks.com    password=${EMPTY}
+
+  Go To Login Page
+  Fill Credentials    ${user}
+  Submit Credentials
+  Alert Span Should Be    Senha obrigatória
+
+Required Fields
+  @{expect_alerts}		Create List
+	...									E-mail obrigatório
+	...									Senha obrigatória
+
+  Go To Login Page
+  Submit Credentials
+  Alert Spans Should Be   ${expect_alerts}
