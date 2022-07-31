@@ -18,7 +18,7 @@ User login
 Incorrect Password
   [Tags]    incorrect_password
 
-  ${user}   Create Dictionary   email=tester@getgeeks.com    password=abc123
+  ${user}   Create Dictionary   email=testerlogin@getgeeks.com    password=abc123
 
   Go To Login Page
   Fill Credentials    ${user}
@@ -38,7 +38,7 @@ User Not Found
 Incorrect Email
   [Tags]    incorrect_email
 
-  ${user}   Create Dictionary   email=tester&getgeeks.com    password=pwd123
+  ${user}   Create Dictionary   email=testerlogin&getgeeks.com    password=pwd123
 
   Go To Login Page
   Fill Credentials    ${user}
@@ -54,7 +54,7 @@ Required Email
   Alert Span Should Be    E-mail obrigatório
 
 Required Password
-  ${user}   Create Dictionary   email=tester@getgeeks.com    password=${EMPTY}
+  ${user}   Create Dictionary   email=testerlogin@getgeeks.com    password=${EMPTY}
 
   Go To Login Page
   Fill Credentials    ${user}

@@ -39,10 +39,17 @@ Dado que acesso a página de cadastro
 Quando submeto o cadastro com uma senha com menos de 6 digitos
 Então vejo a mensagem de alerta "Informe uma senha com pelo menos 6 caracteres"
 
-#### Desafio 1 do Módulo Pro
+##### Desafio 1 do Módulo Pro
 
 Automatizar 3 novos cenários de testes:
 
 - Email obrigatório
 - Senha obrigatória
 - Campos obrigatórios
+
+##### Cenário: Seja um Geek
+
+Dado que eu tenha um usuário comum
+E faço login na plataforma Getgeeks
+Quando submeto o formulário para me tornar um Geek (prestador de serviços)
+Então devo ver a mensagem de sucesso

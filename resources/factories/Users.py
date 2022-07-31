@@ -36,9 +36,27 @@ def factory_wrong_email():
 def factory_user_login():
     user = {
         'name': 'Tester',
-        'lastname': 'Getgeeks',
-        'email': 'tester@getgeeks.com',
+        'lastname': 'Login',
+        'email': 'testerlogin@getgeeks.com',
         'password': 'pwd123'
+    }
+
+    return user
+
+
+def factory_user_be_geek():
+    user = {
+        'name': 'Tester',
+        'lastname': 'Geek',
+        'email': 'testergeek@getgeeks.com',
+        'password': 'pwd123',
+        'geek_profile': {
+            'whatsapp': '13999999999',
+            'description': 'Desenvolvedor Fullstack',
+            'printer_repair': 'Não',
+            'work_mode': 'Remoto',
+            'cost': '650'
+        }
     }
 
     return user
