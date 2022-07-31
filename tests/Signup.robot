@@ -8,6 +8,8 @@ Test Teardown		Finish Session
 
 *** Test Cases ***
 Register a new user
+	[Tags]		smoke
+
 	${user}		Factory User		faker
 
 	Go To Signup Form
@@ -28,7 +30,7 @@ Duplicate user
 	Modal Content Should Be  Já temos um usuário com o e-mail informado.
 
 Wrong Email
-	[Tags]		attempt_signup
+	[Tags]		attempt_signup		wrong_email
 
 	${user}		Factory User		wrong_email
 
