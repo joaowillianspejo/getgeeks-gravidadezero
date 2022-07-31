@@ -39,10 +39,24 @@ def factory_user(target):
             'password': 'pwd123',
             'geek_profile': {
                 'whatsapp': '13999999999',
-                'description': 'Desenvolvedor Fullstack',
+                'description': 'Desenvolvedor Fullstack, especialista em desenvolvimento web com React e APIs rest em Node.js, também desenvolvo Apps Mobile com React Native e desenvolvo testes automatizados com Cypress e Robot Framework.',
                 'printer_repair': 'Não',
                 'work_mode': 'Remoto',
                 'cost': '650'
+            }
+        },
+
+        'short_description': {
+            'name': 'Tester Geek',
+            'lastname': 'Short Description',
+            'email': 'testergeekshortdescription@getgeeks.com',
+            'password': 'pwd123',
+            'geek_profile': {
+                'whatsapp': '11999999999',
+                'description': 'Desenvolvedor Fullstack',
+                'printer_repair': 'Não',
+                'work_mode': 'Ambos',
+                'cost': '500'
             }
         }
     }
