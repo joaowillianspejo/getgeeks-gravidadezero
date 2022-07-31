@@ -8,10 +8,10 @@ Test Teardown   Finish Session
 
 *** Test Cases ***
 Be a Geek
-  ${user}   Factory User Be Geek
+  ${user}   Factory User    be_geek
 
   Do Login    ${user}
-  
+
   Go To Geek Form
   Fill Geek Form    ${user}[geek_profile]
   Submit Geek Form
