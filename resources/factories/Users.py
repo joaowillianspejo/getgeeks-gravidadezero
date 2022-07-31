@@ -10,6 +10,8 @@ def get_hashed_password(password):
 
 
 def factory_user(target):
+    name = fake.first_name()
+
     data = {
         'faker': {
             'name': fake.first_name(),
@@ -58,7 +60,22 @@ def factory_user(target):
                 'work_mode': 'Ambos',
                 'cost': '500'
             }
+        },
+
+        'long_description': {
+            'name': 'Tester Geek',
+            'lastname': 'Long Description',
+            'email': 'testergeeklongdescription@getgeeks.com',
+            'password': 'pwd123',
+            'geek_profile': {
+                'whatsapp': '21999999999',
+                'description': 'Desenvolvedor Fullstack, especialista em desenvolvimento web com React e APIs rest em Node.js, também desenvolvo Apps Mobile com React Native e desenvolvo testes automatizados com Cypress e Robot Framework. Nas horas vagas futeboleiro de boteco e skatista.',
+                'printer_repair': 'Não',
+                'work_mode': 'Presencial',
+                'cost': '800'
+            }
         }
+
     }
 
     return data[target]
