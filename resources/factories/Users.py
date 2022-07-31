@@ -48,28 +48,14 @@ def factory_user(target):
             }
         },
 
-        'short_description': {
-            'name': 'Tester Geek',
-            'lastname': 'Short Description',
-            'email': 'testergeekshortdescription@getgeeks.com',
-            'password': 'pwd123',
-            'geek_profile': {
-                'whatsapp': '11999999999',
-                'description': 'Desenvolvedor Fullstack',
-                'printer_repair': 'Não',
-                'work_mode': 'Ambos',
-                'cost': '500'
-            }
-        },
-
-        'long_description': {
-            'name': 'Tester Geek',
-            'lastname': 'Long Description',
-            'email': 'testergeeklongdescription@getgeeks.com',
+        'attempt_be_geek': {
+            'name': 'Tester',
+            'lastname': 'Attempt Be Geek',
+            'email': 'testerattemptbegeek@getgeeks.com',
             'password': 'pwd123',
             'geek_profile': {
                 'whatsapp': '21999999999',
-                'description': 'Desenvolvedor Fullstack, especialista em desenvolvimento web com React e APIs rest em Node.js, também desenvolvo Apps Mobile com React Native e desenvolvo testes automatizados com Cypress e Robot Framework. Nas horas vagas futeboleiro de boteco e skatista.',
+                'description': 'Desenvolvedor Fullstack, especialista em desenvolvimento web com React e APIs rest em Node.js, também desenvolvo Apps Mobile com React Native e desenvolvo testes automatizados com Cypress e Robot Framework.',
                 'printer_repair': 'Não',
                 'work_mode': 'Presencial',
                 'cost': '800'
