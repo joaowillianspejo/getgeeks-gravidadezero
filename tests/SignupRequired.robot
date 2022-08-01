@@ -4,7 +4,7 @@ Documentation		Signup Required Test Suite
 Resource		${EXECDIR}/resources/Base.robot
 
 Suite Setup			Signup Without Fill Form
-Test Teardown		Finish Session
+Test Teardown		After Test
 
 *** Test Cases ***
 Name is required
