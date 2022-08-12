@@ -21,8 +21,8 @@ ${BASE_URL}		https://getgeeks-joaowillian.herokuapp.com
 *** Keywords ***
 Start Session
 	New Browser					${BROWSER}		headless=${HEADLESS}		slowMo=00:00:00.5
-	Set Viewport Size		1280		768
 	New Page						${BASE_URL}
+	Set Viewport Size		1280		768
 
 After Test
 	${screenshot_name}		Screenshot Name
