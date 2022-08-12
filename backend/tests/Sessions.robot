@@ -26,7 +26,7 @@ User session
 
   ${size}             Get Length            ${response.json()}[token]
   Should Be True      ${size} > 0
-  
+
   Should Be Equal     10d                   ${response.json()}[expires_in]
 
 Should not get token
