@@ -10,7 +10,7 @@ Connect To Postgres
   ...                   wvdocjxb
   ...                   wvdocjxb
   ...                   iyENgDASLyCZc4FGc0nzgp1S-ZHYZ3_a
-  ...                   jelani.db.elephantsql.com (jelani-01)
+  ...                   jelani.db.elephantsql.com
   ...                   5432
 
 Reset Env
