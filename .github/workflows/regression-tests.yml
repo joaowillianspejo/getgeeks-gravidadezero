@@ -31,7 +31,7 @@ jobs:
           cd backend/ && ./run.sh
       - name: Upload API Tests Results
         uses: actions/upload-artifact@v3.1.0
-        if: awalys()
+        if: always()
         with:
           name: api-tests-reports
           path: backend/logs
