@@ -4,7 +4,7 @@ Documentation		BeGeek actions
 *** Keywords ***
 Go To Geek Form
   Click   css=a[href="/be-geek"] >> text=Seja um Geek
-  Wait For Elements State   css=form.be-geek-form   visible
+  Wait For Elements State   css=.be-geek-form   visible
 
 Fill Geek Form
   [Arguments]   ${geek_profile}
