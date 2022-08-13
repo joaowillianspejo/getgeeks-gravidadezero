@@ -22,7 +22,7 @@ Duplicate user
 
 	${user}		Factory User		faker
 
-	Add User		${user}
+	Add User From Database		${user}
 
 	Go To Signup Form
 	Fill Signup Form		${user}
