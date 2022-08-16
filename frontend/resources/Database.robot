@@ -27,10 +27,8 @@ Insert User
   Execute SQL String    ${query}
 
 Users Seed
-  ${user_login}                     Factory User    login
-  ${user_geek}                      Factory User    be_geek
-  ${user_attempt_be_geek}           Factory User    attempt_be_geek
+  ${users}    Users To Insert DB
 
-  Insert User   ${user_login}
-  Insert User   ${user_geek}
-  Insert User   ${user_attempt_be_geek}
+  FOR   ${user}   IN    @{users}
+    Insert User   ${user}
+  END

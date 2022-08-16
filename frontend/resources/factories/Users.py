@@ -8,6 +8,12 @@ def get_hashed_password(password):
     hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt(8))
     return hashed
 
+def users_to_insert_db():
+    return [
+        factory_user('login'),
+        factory_user('be_geek'),
+        factory_user('attempt_be_geek')
+    ]
 
 def factory_user(target):
     name = fake.first_name()
