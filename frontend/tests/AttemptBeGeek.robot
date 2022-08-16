@@ -33,7 +33,7 @@ Attempt Be a Geek
 
   Set To Dictionary   ${user}[geek_profile]   ${key}    ${input_field}
 
-  Fill Geek Form    ${user}[geek_profile]
+  Fill Geek Form      ${user}[geek_profile]
   Submit Geek Form
   Alert Span Should Be    ${output_message}
 

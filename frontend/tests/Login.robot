@@ -64,10 +64,10 @@ Required Password
   Alert Span Should Be    Senha obrigatória
 
 Required Fields
-  @{expect_alerts}		Create List
-	...									E-mail obrigatório
-	...									Senha obrigatória
+  @{expected_alerts}    Create List
+	...									  E-mail obrigatório
+	...									  Senha obrigatória
 
   Go To Login Page
   Submit Credentials
-  Alert Spans Should Be   ${expect_alerts}
+  Alert Spans Should Be   ${expected_alerts}

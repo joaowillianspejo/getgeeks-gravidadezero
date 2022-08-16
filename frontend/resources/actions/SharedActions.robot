@@ -3,7 +3,7 @@ Documentation   Shared Actions
 
 *** Keywords ***
 Modal Content Should Be
-	[Arguments]		${expect_message}
+	[Arguments]		${expected_message}
 
 	${title}			Set Variable		css=.swal2-title
 	${content}		Set Variable		css=.swal2-html-container
@@ -12,25 +12,25 @@ Modal Content Should Be
 	Get Text									${title}		equal		Oops...
 
 	Wait For Elements State		${content}		visible	
-	Get Text									${content}		equal		${expect_message}
+	Get Text									${content}		equal		${expected_message}
 
 Alert Span Should Be
-	[Arguments]		${expect_alert}
+	[Arguments]		${expected_alert}
 
-	Wait For Elements State		css=span[class=error] >> text=${expect_alert}		visible
+	Wait For Elements State		css=span[class=error] >> text=${expected_alert}		visible
 
 Alert Spans Should Be
-	[Arguments]			${expect_alerts}
+	[Arguments]			${expected_alerts}
 
 	@{got_alerts}		Create List
 
 	${spans}				Get Elements		xpath=//span[@class="error"]
 
-	FOR		${span}		IN		${spans}
+	FOR		${span}		IN		@{spans}
 
 		${text}						Get Text				${span}
 		Append To List		${got_alerts}		${text}
 
 	END
 
-	Lists Should Be Equal		${expect_alerts}		${got_alerts}
+	Lists Should Be Equal		${expected_alerts}		${got_alerts}

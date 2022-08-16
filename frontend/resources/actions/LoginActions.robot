@@ -22,11 +22,11 @@ Submit Credentials
 User Should Be Logged In
   [Arguments]   ${user}
 
-  ${element}            Set Variable    css=a[href="/profile"]
-  ${expect_fullname}    Set Variable    ${user}[name] ${user}[lastname]
+  ${element}              Set Variable    css=a[href="/profile"]
+  ${expected_fullname}    Set Variable    ${user}[name] ${user}[lastname]
 
   Wait For Elements State   ${element}    visible
-  Get Text                  ${element}    equal     ${expect_fullname}
+  Get Text                  ${element}    equal     ${expected_fullname}
 
 Should Be Type Email
   Get Property   ${INPUT_EMAIL}   type    equal   email
