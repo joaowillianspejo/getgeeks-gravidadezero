@@ -26,7 +26,7 @@ User Should Be Logged In
   ${expect_fullname}    Set Variable    ${user}[name] ${user}[lastname]
 
   Wait For Elements State   ${element}    visible
-  Get Text                  ${element}    ${expect_fullname}
+  Get Text                  ${element}    equal     ${expect_fullname}
 
 Should Be Type Email
-  Get Property   ${INPUT_EMAIL}   Type    equal   email
+  Get Property   ${INPUT_EMAIL}   type    equal   email
