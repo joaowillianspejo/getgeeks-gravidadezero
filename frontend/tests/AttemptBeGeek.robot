@@ -31,7 +31,7 @@ Attempt Be a Geek
 
   ${user}   Factory User    attempt_be_geek
 
-  Set Dictionary    ${user}[geek_profile]   ${key}    ${input_field}
+  Set To Dictionary   ${user}[geek_profile]   ${key}    ${input_field}
 
   Fill Geek Form    ${user}[geek_profile]
   Submit Geek Form
