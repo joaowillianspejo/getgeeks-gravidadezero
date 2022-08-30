@@ -14,6 +14,7 @@ Resource		actions/BeGeekActions.robot
 
 Resource		Database.robot
 Resource		Helpers.robot
+Resource		Services.robot
 
 *** Variables ***
 ${BASE_URL}		https://getgeeks-joaowillian.herokuapp.com
