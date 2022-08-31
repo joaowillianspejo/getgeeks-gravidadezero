@@ -55,7 +55,7 @@ Geek Should Be Found
 
   ${target_geek}    Get Element    xpath=//strong[contains(text(), "${full_name}")]/../../..
 
-  ${work}           Convert To Lower Case   ${geek}[geek_profile][work]
+  ${work}           Convert To Lower Case   ${geek}[geek_profile][work_mode]
 
   Get Text    ${target_geek}   contains    Atendimento ${work}
   Get Text    ${target_geek}   contains    ${geek}[geek_profile][description]

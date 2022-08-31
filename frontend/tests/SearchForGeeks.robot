@@ -23,3 +23,18 @@ Search for Alien Geek
   Geek Should Be Found    ${alien}
 
   Alien Icon Should Be Visible
+
+Search for Common Geek
+  ${common}    Factory User     search_common
+  Create Geek Profile Service   ${common}
+
+  ${searcher}   Factory User    searcher
+  Do Login      ${searcher}
+
+  Go To Geeks
+
+  Fill Search Form    Não   Desenvolvedor
+
+  Submit Search Form
+
+  Geek Should Be Found    ${common}
