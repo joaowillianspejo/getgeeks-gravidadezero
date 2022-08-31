@@ -85,7 +85,7 @@ def factory_user(target):
             'password': 'alien@123',
             'geek_profile': {
                 'whatsapp': '13999999999',
-                'description': 'Conserto de impressora, formato computadores para Windows ou Linux e removo virus.',
+                'description': 'Conserto de impressora, formato computadores para Windows ou Linux, realizo manutenção em hardware, e removo virus.',
                 'printer_repair': 'Sim',
                 'work_mode': 'Presencial',
                 'cost': '250'
