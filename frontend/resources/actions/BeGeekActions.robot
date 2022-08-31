@@ -66,5 +66,10 @@ Geek Should Be Found
 Alien Icon Should Be Visible
   Get Text    ${target_geek}   contains    👽
 
+Search Alert Should Be
+  [Arguments]   ${expected_alert}
+
+  Wait For Elements State   css=.search-not-found p >> text=${expected_alert}   visible
+
 Reset Geek Form
   Execute Javascript    document.getElementsByClassName("be-geek-form")[0].reset();
