@@ -16,6 +16,10 @@ Search for Alien Geek
 
   Go To Geeks
 
-  Fill Search Form    Sim   Impressora a Jato
+  Fill Search Form    Sim   Conserto de impressora
 
   Submit Search Form
+
+  Geek Should Be Found    ${alien}
+
+  Alien Icon Should Be Visible

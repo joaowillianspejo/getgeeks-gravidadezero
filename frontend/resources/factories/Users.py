@@ -85,10 +85,10 @@ def factory_user(target):
             'password': 'alien@123',
             'geek_profile': {
                 'whatsapp': '13999999999',
-                'description': 'Desenvolvedor Fullstack, especialista em desenvolvimento web com React e APIs rest em Node.js, também desenvolvo Apps Mobile com React Native e desenvolvo testes automatizados com Cypress e Robot Framework.',
+                'description': 'Conserto de impressora, formato computadores para Windows ou Linux e removo virus.',
                 'printer_repair': 'Sim',
                 'work_mode': 'Presencial',
-                'cost': '650'
+                'cost': '250'
             }
         },
 
